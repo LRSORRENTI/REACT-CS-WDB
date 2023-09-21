@@ -1,0 +1,47 @@
+=====================
+Basic React Structure
+=====================
+
+There are some basic React structure conventions
+that most React apps follow 
+
+One if to have an App.js component, this is typically 
+the highest level component, then inside of the 
+index.js, we render that <App /> inside of the 
+root div from index.html, typically you'll never change 
+the structure of the index.js:
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
+
+
+But inside of App.js, that's where we'll add 
+components to render:
+
+import "./styles.css";
+
+export default function App() {
+  return (
+    <div className="App">
+    <Navbar/>
+      <h1>Hello CodeSandbox!</h1>
+      <h2>Start editing to see some magic happen!</h2>
+        <input 
+        type="text" placeholder="enter name"></input>
+        <Footer/>
+    </div>
+  );
+}
+
+So maybe we render a navbar and footer component in 
+the above app, then maybe those navbar / footer 
+are rendering their own components, an so on 
+
+That's the concept here, components nested in components
+all the way down
