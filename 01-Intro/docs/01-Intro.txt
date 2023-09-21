@@ -1,0 +1,9 @@
+===========
+React Intro
+===========
+
+React uses components, which are like boxes of 
+code that encapsulate some HTML, CSS, JS
+
+React let's us build user interfaces out of these 
+individual components
