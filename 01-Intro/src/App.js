@@ -2,6 +2,7 @@ import "./styles.css";
 import Greeter from "./components/Greeter";
 import Dog from "./components/Dog";
 import LoginForm from "./components/LoginForm";
+import Die from "./components/Die";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
          <LoginForm />
         <Greeter />
         <Dog />
+        <Die />
     </div>
   );
 }
