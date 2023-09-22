@@ -1,4 +1,5 @@
 import "./styles.css";
+import Greeter from "./Greeter";
 
 export default function App() {
   return (
@@ -7,6 +8,8 @@ export default function App() {
       <h2>Start editing to see some magic happen!</h2>
         <input 
        type="text" placeholder="enter name"></input>
+        <Greeter />
+        <Greeter />
     </div>
   );
 }
