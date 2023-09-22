@@ -1,6 +1,7 @@
 import "./styles.css";
 import Greeter from "./components/Greeter";
 import Dog from "./components/Dog";
+import LoginForm from "./components/LoginForm";
 
 export default function App() {
   return (
@@ -9,7 +10,7 @@ export default function App() {
       <h2>Start editing to see some magic happen!</h2>
         <input 
        type="text" placeholder="enter name"></input>
-        <Greeter />
+         <LoginForm />
         <Greeter />
         <Dog />
     </div>
