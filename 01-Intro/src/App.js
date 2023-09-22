@@ -1,5 +1,6 @@
 import "./styles.css";
-import Greeter from "./Greeter";
+import Greeter from "./components/Greeter";
+import Dog from "./components/Dog";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
        type="text" placeholder="enter name"></input>
         <Greeter />
         <Greeter />
+        <Dog />
     </div>
   );
 }
