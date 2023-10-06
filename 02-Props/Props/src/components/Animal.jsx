@@ -1,7 +1,9 @@
+import '../styles/Animal.css'
+
 export default function Animal(){
     return(
         <div>
-            <p>
+            <p className="animal">
                 Animalier
             </p>
         </div>
