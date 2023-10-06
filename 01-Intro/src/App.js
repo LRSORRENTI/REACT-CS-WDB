@@ -5,6 +5,7 @@ import LoginForm from "./components/LoginForm";
 import Die from "./components/Die";
 import ThreeDiceRolls from "./components/DieRollThree";
 import Header from "./components/Header";
+import RenderPoke from "./components/RenderPoke";
 
 export default function App() {
   return (
@@ -18,7 +19,8 @@ export default function App() {
         <LoginForm />
         <Greeter />
         <Dog />
-        <ThreeDiceRolls />
+        {/* <ThreeDiceRolls /> */}
+        <RenderPoke />
     </div>
   );
 }
