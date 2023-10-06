@@ -1,0 +1,10 @@
+=====
+Props
+=====
+
+Props are arguments we can provide to our components
+
+We use props to make more configurable components: 
+
+<Greeter name="Luke"/>
+<Greeter name="Rey"/>
