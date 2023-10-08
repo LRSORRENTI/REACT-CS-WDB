@@ -1,3 +1,5 @@
-export default function Greeter(props){
-    return <h1>Hello{props.person}</h1>
+export default function Greeter({person}){
+    return <h1>Hello {person}, 
+       how are you?
+    </h1>
 }
