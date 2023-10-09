@@ -18,6 +18,11 @@ export default function DoubleDice(){
             <h2>Also can use inline JS conditional 
                 check: {num1 !== num2 ? truthyFalsy = "false" : truthyFalsy = 'true'}
             </h2>
+            Can also even render html elements inside the 
+            condtional check: 
+            <h3>{num1 !== num2 ? <p>"false"</p> : <p> 'true'</p>}</h3>
+            <h3>Double ampersand check for condtional rendering: 
+                num1 === num2 && h3div{num1 === num2 && <h3>You win</h3>} : {<h3>You lose</h3>}</h3>
         </div>
     );
 }
