@@ -4,12 +4,20 @@ import Greeter from './src/components/Greeter'
 import Die from './src/components/Die'
 
 function App() {
+  // Below we omit the prop value for the 
+  // first greeter, defaults to 'Luke', but for 
+  // the second greeter call we omit the day= prop
+  // which has no default value therefore nothing 
+  // is rendered it's just 'How are you on this' 
  return (
   <div>
  <h1>Hello world!</h1>
  <Animal />
- <Greeter person="Luke" day="Friday"/>
- <Die numSides={6}/>
+ <Greeter day="Friday"/>
+ <Greeter />
+ <Greeter person='Eddie' day="Monday"/>
+ <Die />
+ <Die numSides={10}/>
  </div>
   )
 }
