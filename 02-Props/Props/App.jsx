@@ -20,7 +20,7 @@ function App() {
  <Greeter person='Eddie' day="Monday"/>
  <Die />
  <Die numSides={10}/> */}
- <Heading color='magenta' text={"I'm a heading"}/>
+ <Heading text={"I'm a heading"}/>
  <DayPicker values={['Mon ', 'Tues ', 'Weds ', 'Thurs ', 'Fri ']} />
  <DoubleDice />
  </div>
