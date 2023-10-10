@@ -9,9 +9,10 @@ export default function DoubleDice(){
     // } else {
     //     truthyFalsy = "true";
     // }
+    const styles = {color: num1 === num2 ? "green" : "red", fontSize: "20px"}
     if(num1 !== num2 ? truthyFalsy = "false" : truthyFalsy = 'true')
     return (
-        <div>
+        <div className="DoubleDice" style={styles}>
             <h1>Num1: {num1}</h1>
             <h1>Num2: {num2}</h1>
             <h2>Was a match? {truthyFalsy}</h2>

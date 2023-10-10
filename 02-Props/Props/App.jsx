@@ -4,6 +4,7 @@ import Greeter from './src/components/Greeter'
 import Die from './src/components/Die'
 import DayPicker from './src/components/DayOfWeekPicker.'
 import DoubleDice from './src/components/DoubleDice'
+import Heading from './src/components/Heading'
 function App() {
   // Below we omit the prop value for the 
   // first greeter, defaults to 'Luke', but for 
@@ -19,6 +20,7 @@ function App() {
  <Greeter person='Eddie' day="Monday"/>
  <Die />
  <Die numSides={10}/> */}
+ <Heading color='magenta' text={"I'm a heading"}/>
  <DayPicker values={['Mon ', 'Tues ', 'Weds ', 'Thurs ', 'Fri ']} />
  <DoubleDice />
  </div>
