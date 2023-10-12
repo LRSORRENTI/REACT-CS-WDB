@@ -3,10 +3,10 @@ import ShoppingList from './src/components/ShoppingList'
 
 
 const data = [
-  {name: "eggs", quantity: 12, completed: false},
-  {name: "milk", quantity: 1, completed: true},
-  {name: "chicken breast", quantity: 4, completed: false},
-  {name: "carrots", quantity: 4, completed: false}
+  {id: 1, name: "eggs", quantity: 12, completed: false},
+  {id: 2, name: "milk", quantity: 1, completed: true},
+  {id: 3, name: "chicken breast", quantity: 4, completed: false},
+  {id: 4, name: "carrots", quantity: 4, completed: false}
 ]
 
 // Imagine this sample data is actually from mongodb or
