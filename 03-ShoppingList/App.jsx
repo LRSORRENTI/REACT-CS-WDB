@@ -1,5 +1,7 @@
 import './src/styles/App.css'
 import ShoppingList from './src/components/ShoppingList'
+
+
 const data = [
   {name: "eggs", quantity: 12, completed: false},
   {name: "milk", quantity: 1, completed: true},
@@ -11,15 +13,15 @@ const data = [
 // some actual database, not just a hard coded array, 
 // but we ned to create a component to render this data
 
-function App() {
+export default function App() {
 
  return (
  
   <div>
-    <h1>hello</h1>
-    <ShoppingList/>
+
+    <ShoppingList items={data}/>
     </div>
   )
 }
 
-export default App
+
