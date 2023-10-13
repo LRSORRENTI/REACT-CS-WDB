@@ -1,6 +1,7 @@
 import './src/styles/App.css'
 import ShoppingList from './src/components/ShoppingList'
-
+import Header from './src/components/Header'
+import FooterJSX from './src/components/Footer'
 
 const data = [
   {id: 1, name: "eggs", quantity: 12, completed: false},
@@ -15,11 +16,14 @@ const data = [
 
 export default function App() {
 
- return (
- 
-  <div>
 
+ return (
+  <div>
+    <Header />
     <ShoppingList items={data}/>
+    <ShoppingList items={data}/>
+    <ShoppingList items={data}/>
+    <FooterJSX/>
     </div>
   )
 }

@@ -4,7 +4,12 @@
   padding: 2rem;
   text-align: center;
 }
-
+.a{
+  color: red;
+}
+.a:hover{
+  color: lightcyan;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
