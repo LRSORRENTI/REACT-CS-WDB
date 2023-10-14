@@ -1,6 +1,10 @@
 function ShoppingListItem({name, quantity, completed}){
-  return(
-    <li>{name} - {quantity}</li>
+  const styles = {
+    color: completed ? "grey" : "orange",
+    textDecoration: completed ? "line-through" : "none"
+     }
+    return(
+    <li style={styles}>{name} - {quantity}</li>
   )
 }
 
