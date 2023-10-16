@@ -1,0 +1,14 @@
+=========================
+Handling Non Click Events
+=========================
+
+onClick is one of the more common events but 
+there are many other events any valid DOM events 
+can be used in React
+
+All the events are camel cased in React, 
+for the regular JS onmouseover event, in react it's 
+onMouseOver
+
+Mouse over events are common but events like 
+clicks are, form submission events also
