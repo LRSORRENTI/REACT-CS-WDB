@@ -1,0 +1,40 @@
+======================
+Accessing Event Object
+======================
+
+Often we'll need to access the event object itself,
+for keypress or form events for example: 
+
+export default function Form(){
+    return(
+        <form>
+        <button>
+            Submit
+        </button>
+        </form>
+    )
+}
+
+Notice when the button is clicked the page refreshes
+
+This is not what we want in React, we have a SPA 
+and page refreshes aren't what we want in SPA's 
+
+We control what the end user sees by using JS, 
+that way the page never needs a refresh
+
+So to prevent that default behavior, we utilize 
+the event object, and call the prevent default 
+behavior method: 
+
+function handleFormSubmit(event){
+    event.preventDefault();
+    console.log('Submitted the form')
+}
+
+Now on submit press, no page refresh, default 
+behavior is gone
+
+Often times we may not need to event object,
+but understanding how to access the event methods 
+is crucial in React
