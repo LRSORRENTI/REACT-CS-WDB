@@ -1,0 +1,37 @@
+============
+React Events
+============
+
+Outside of react when we listen for events 
+we use methods like addEventListener('click', => {})
+
+But in react we do it differently: 
+
+export default function Clicker(){
+    return(
+        <div>
+            <p>Click The Button</p>
+            <button>Click</button>
+        </div>
+    )
+}
+
+And to start simple, how do we output something 
+to the console on click? 
+
+function handleClick(){
+    console.log("clicked!!!")
+}
+
+
+export default function Clicker(){
+    return(
+        <div>
+            <p>Click The Button</p>
+            <button onClick={handleClick}>Click</button>
+        </div>
+    )
+}
+
+We define a function, then add the onClick attribute
+and pass that function into the onClick event handler
