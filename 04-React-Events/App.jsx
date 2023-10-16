@@ -4,7 +4,7 @@ import Header from './src/components/Header'
 import FooterJSX from './src/components/Footer'
 import Greeter from './src/components/Greeter'
 import PropertyList from './src/components/PropertyList'
-
+import Clicker from './src/components/Clicker'
 const data = [
   {id: 1, name: "Desert Urt", rating: 10, price: 100},
   {id: 2, name: "Lone Mountain Ranch", rating: 1, price: 300},
@@ -29,13 +29,14 @@ export default function App() {
 
  return (
   <div>
-    <PropertyList properties={data}/>
+    {/* <PropertyList properties={data}/> */}
     {/* <Header />
     <Greeter person={"LUKE"} day={"Friday"}/>
     <ShoppingList items={data}/>
     <ShoppingList items={dataTwo}/>
     <ShoppingList items={data}/>
     <FooterJSX/> */}
+    <Clicker/>
     </div>
   )
 }
