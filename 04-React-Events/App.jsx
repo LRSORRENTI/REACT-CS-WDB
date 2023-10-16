@@ -6,6 +6,7 @@ import Greeter from './src/components/Greeter';
 import PropertyList from './src/components/PropertyList';
 import Clicker from './src/components/Clicker';
 import Form from './src/components/Form';
+import PracClicker from './src/components/PracClicker';
 // const data = [
 //   {id: 1, name: "Desert Urt", rating: 10, price: 100},
 //   {id: 2, name: "Lone Mountain Ranch", rating: 1, price: 300},
@@ -30,6 +31,9 @@ export default function App() {
 
  return (
   <div>
+    {/* <PracClicker  buttonText={"click me"}/> */}
+    <PracClicker alertMessage={"dont click"} buttonText={"dont click me"}/>
+    <PracClicker alertMessage={"clicked"} buttonText={"clickme"}/>
     {/* <PropertyList properties={data}/> */}
     {/* <Header />
     <Greeter person={"LUKE"} day={"Friday"}/>
@@ -37,8 +41,8 @@ export default function App() {
     <ShoppingList items={dataTwo}/>
     <ShoppingList items={data}/>
     <FooterJSX/> */}
-    <Clicker/>
-    <Form/>
+    {/* <Clicker/>
+    <Form/> */}
     </div>
   )
 }
