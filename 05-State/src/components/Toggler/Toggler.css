@@ -1,0 +1,12 @@
+.Toggler{
+    font-size: 2rem;
+    border: 1px solid teal;
+    border-radius: 5px;
+
+}
+
+.Toggler:hover{
+    cursor: pointer;
+    background-color: lightcyan;
+    color: teal
+}
