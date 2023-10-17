@@ -33,7 +33,7 @@ export default function App() {
   <div>
     {/* <PracClicker  buttonText={"click me"}/> */}
     <PracClicker alertMessage={"dont click"} buttonText={"dont click me"}/>
-    <PracClicker alertMessage={"clicked"} buttonText={"clickme"}/>
+    <PracClicker alertMessage={"clicked"} buttonText={"click me"}/>
     {/* <PropertyList properties={data}/> */}
     {/* <Header />
     <Greeter person={"LUKE"} day={"Friday"}/>
