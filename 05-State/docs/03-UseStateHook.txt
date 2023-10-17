@@ -1,0 +1,25 @@
+==========================
+What is the useState Hook?
+==========================
+
+useState is on example of a React Hook, and hooks 
+are functions React provides to provide 
+functionality to components, useState is one of 
+the more widely used hook, and they all begin 
+with the word 'use', so if you ever see a function
+and it begins with useSomething, it's likely a 
+React Hook
+
+One way to create state is with the 
+useState hook, it looks something like: 
+
+const [count, setCount] = useState(0);
+
+The above returns an array containing two 
+elements: 
+
+- The state itself (count)
+
+- And the function to update the state (setCount)
+
+useState must be called from inside a component
