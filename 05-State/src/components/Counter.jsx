@@ -6,7 +6,7 @@ export default function Counter(){
 
     const changeNum = () => {
         setNum(num + 1)
-    }
+    };
 
     return (
         <div>
