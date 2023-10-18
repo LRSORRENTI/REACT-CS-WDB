@@ -1,14 +1,20 @@
 import { useState } from 'react';
 import './ColorBox.css';
 
+function generateRandColor(arr){
+    const randColorIdx = Math.floor(Math.random() * arr.length);
+    return arr[randColorIdx];
+}
+
+
 export default function ColorBox({colors}){
 
-    const [color, setColor] = useState("lime");
+    const [color, setColor] = useState(generateRandColor(colors));
 
+    
     const changeColor = () => {
-        const randColorIdx = (Math.floor(Math.random() * colors.length))
-        const randColor = colors[randColorIdx];
-        setColor(randColor);
+        const randomColor = generateRandColor(colors);
+        setColor(randomColor);
 
     }
 
