@@ -1,9 +1,16 @@
+======================
+useState And Rendering
+======================
+
+In this section we'll go over the lifecycle of a 
+component, let's add a console.log to our 
+counter component: 
+
 import { useState } from "react";
 
 export default function Counter(){
 
     const [num, setNum] = useState(0);
-
 
     console.log(`num: ${num} and the component 
     has been re-rendered`)
