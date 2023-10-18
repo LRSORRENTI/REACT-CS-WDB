@@ -1,10 +1,8 @@
 .ColorBox {
-    border: 1px solid rgb(0, 0, 0);
-    width: 200px;
-    height: 200px
-
-}
-
+    width: 20%;
+    height: 20%;
+  }
+  
 .ColorBox:hover{
     cursor: pointer;
 }
