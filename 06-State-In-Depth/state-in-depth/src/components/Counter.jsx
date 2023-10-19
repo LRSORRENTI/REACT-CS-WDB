@@ -17,7 +17,7 @@ export default function Counter(){
         // And if we repeat this three times, react adds
         // a queue like structure:
         setCount(current => current + 1)
-        setCount(current => current+ 1)
+        setCount(current => current + 1)
         // By using this callback like structure, we 
         // can make changes to state, which depend on 
         // retaining the current or 'current' value of a given 
