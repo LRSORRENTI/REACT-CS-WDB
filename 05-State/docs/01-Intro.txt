@@ -1,0 +1,23 @@
+===========
+React State
+===========
+
+In this section we'll go over one of the most 
+critically important concepts of React, which is 
+State 
+
+So far we learned components are re-usable 
+building blocks that combine logic and presentation,
+they can be big or small components 
+
+We also learned about properties, or props, values 
+we can pass into those components
+
+Now we'll practice and learn State, which is 
+data specific to an instance of a component, 
+key takeaway is STATE CAN CHANGE 
+
+To demonstrate State in a basic way we'll create a counter 
+component, and counter will return a paragraph 
+that will track how many times a button has been 
+clicked
