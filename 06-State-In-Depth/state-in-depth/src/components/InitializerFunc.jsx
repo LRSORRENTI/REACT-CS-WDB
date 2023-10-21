@@ -25,3 +25,10 @@ export default function InitializerFunc(){
 
   return <button onClick={() => makeBoard("hello")}>Click to change state</button>
 }
+
+// In the react dev tools, we see that the Initalizer Func 
+// imitially generates an Array: State:
+// [null, null, null, null, null, null, null, null...]
+
+// But after clicking, the button, that board changes
+// to "hello"
