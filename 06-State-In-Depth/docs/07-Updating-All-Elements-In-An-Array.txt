@@ -1,3 +1,26 @@
 =================================
 Updating All Elements In An Array
 =================================
+
+        const makeHearts = () => {
+            setEmojis(prevArr => {
+                return prevArr.map(ele => {
+                    return {
+                        ...ele,
+                        emoji: '<3'
+                    };
+                });
+            });
+        };
+
+    const makeMoney = () => {
+        setEmojis(prevArr => {
+            return prevArr.map( ele => {
+                return {
+                    ...ele,
+                    emoji: '$$$'
+                }
+            })
+        })
+    }
+        
