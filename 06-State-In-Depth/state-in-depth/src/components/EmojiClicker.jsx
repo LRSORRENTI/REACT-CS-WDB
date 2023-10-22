@@ -29,11 +29,40 @@ export default function EmojiClicker(){
     //     }))
     // }
 
+    const deleteEmojiByUUID = (id) => {
+        // Delete emoji by it's unique ID
+        // Also need to pass in that id as an argument 
+        // in the JSX below, but we can't pass it in 
+        // directly like span onClick deleteEmojibyUUID(emoji.id)
+        // but we can pass in an anonymous function 
+        // that will execute when pressed
+
+        // We still need to implement that actual 
+        // meat and potatoes, how do we delete it? 
+
+        // We can use the filter method! We filter based 
+        // on the ID 
+        setEmojis(prevArr => {
+           return prevArr.filter(emoji => emoji.id !== id)
+        })
+       
+        // We use filter, filter creates a copy 
+        // of the emojis array, and returns everything 
+        // that is NOT equal to the id passed in, leaving 
+        // us with our unique emoji we want to delete
+        
+        // So we'll then set that new filtered array to 
+        // be our state var
+
+        }
+     
+
+
     return (
         <div>
             {emojis.map(emoji => {
                 return (
-                    <span key={emoji.id} style={{fontSize: "4rem"}}>{emoji.emoji}</span>
+                    <span onClick={() => deleteEmojiByUUID(emoji.id) } key={emoji.id} style={{fontSize: "4rem", cursor: 'pointer'}}>{emoji.emoji}</span>
                 )
             })}
             <button onClick={addEmoji}>Add emoji</button>
