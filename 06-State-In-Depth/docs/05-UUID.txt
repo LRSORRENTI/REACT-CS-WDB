@@ -1,0 +1,15 @@
+================================
+Generating Unique ID's With UUID
+================================
+
+In order to remove any value from a given array,
+each value will need a unique identifier, 
+there's a package available called uuid that 
+makes creating unique id's easy, UUID 
+
+So we want each value to be an object with: 
+
+{
+    id: 'unique UUID here', 
+    emoji: ':D'
+}
