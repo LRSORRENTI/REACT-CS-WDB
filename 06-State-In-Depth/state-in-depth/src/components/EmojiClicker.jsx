@@ -11,10 +11,21 @@ export default function EmojiClicker(){
         // array directly, just like how it was with objects
     
         setEmojis(oldEmojis => {
+            // And generally we always want to use callbacks 
+            // to 
+
             // We make a copy of the old array with 
             // ...oldEmojis
             return [...oldEmojis, ":("]
         })
+    }
+
+    const removeEmoji = (idx) => {
+        setEmojis((oldEmojis => {
+            const newArray = [...oldEmojis];
+            newArray.splice(idx, 1);
+            return newArray;
+        }))
     }
 
     return (
@@ -25,6 +36,7 @@ export default function EmojiClicker(){
                 )
             })}
             <button onClick={addEmoji}>Add emoji</button>
+            <button onClick={removeEmoji}>Remove 1</button>
         </div>
     )
 }
