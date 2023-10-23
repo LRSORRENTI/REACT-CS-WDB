@@ -11,6 +11,7 @@ export default function FinalScoreKeeper({numPlayers=3, target=5}){
             if(idx === i) return score + 1;
             return score;
          });
+        
         });
     };
 
