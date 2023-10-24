@@ -7,6 +7,7 @@ function App() {
     <>
     <h1>Component Design</h1>
     <LuckyN />
+    <LuckyN numDice={3} goal={11}/>
     </>
   )
 }

@@ -15,12 +15,16 @@ export default function LuckyN({numDice = 2, goal = 7}) {
    
    // Below will be true or false, if goal is equal 
    const isWinner = sum(dice) === goal;
+
+   const roll = () => setDice(getRolls(numDice));
+
     return (
         <main className="LuckyN">
             <h1>
                 Lucky {goal} {isWinner ? "You Win!" : ""}
             </h1>
             <Dice dice={dice}/> 
+            <button onClick={roll}>Roll Dice</button>
         </main>
     )
 };
