@@ -1,0 +1,16 @@
+=============
+Die Component
+=============
+
+This component is only here for the die, 
+it's stateless, it's just a div that renders 
+a value, it gets one value as a prop, then passes 
+that prop into the jsx, it's purely presentational: 
+
+export default function Die( {val} ) {
+    return(
+        <div className="die">
+            {val}
+        </div>
+    );
+};
