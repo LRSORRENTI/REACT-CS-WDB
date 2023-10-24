@@ -16,3 +16,22 @@ Goals for the section:
 
 - Learn how to pass functions between components 
 
+We'll practice these concepts by building a game, 
+a game where we'll have two dice, if after the 
+dice roll each add up to sevem, we roll a five 
+and a two, we win, or three and four..
+
+But we'll also struture the app so that we can 
+play lucky (n), lucky 10, lucky 20 where we have more than 
+two dice, we'll structure this app so that it can be 
+easily extended and customizable
+
+Requirements: 
+
+- Play a dice game with numDice or number of dice 
+  and a selection for the add up to goal, 7, 10, 20...
+
+- Display a winning banner if the user wins the game 
+
+- Implement a roll again button that re-rolls all the 
+  dice
