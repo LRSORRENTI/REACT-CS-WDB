@@ -35,3 +35,16 @@ Requirements:
 
 - Implement a roll again button that re-rolls all the 
   dice
+
+
+  When we first start building, some things to 
+  think about are: 
+
+  - What props will the project ultimately need? 
+
+  - What state will be needed? And where? 
+
+  - How do we effectively make components as 
+    de-coupled and re-usable as possible? 
+
+

@@ -1,0 +1,36 @@
+==============
+Dice Component
+==============
+
+In here we have our parent of the Die Component Dice 
+
+This component will be passed a prop called Dice, 
+all of the values, remember props are passed down 
+not up, the state will live one level above this 
+when we create that component
+
+This component will have props, but no state, 
+no events at all! We want this component to 
+be purely responsible for rendering child Die 
+components, based on the props received:
+
+import Die from '../Die/Die';
+
+export default function Dice( {dice} ) {
+    return (
+        <section className="Dice"> 
+            {Dice.map((v, i) => {
+                <Die key={i} val={v} />
+            })}
+        </section>
+    );
+};
+
+It's a function that expects an array of dice as a 
+prop, then will render a set of die components where 
+the values are passed in for each, and he array index 
+is the key{i}, which in the real world isn't good, but 
+for learning purposes we'll structure it that way
+
+And now back in App.jsx, instead of importing a die 
+component, we'll import the Dice component
