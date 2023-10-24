@@ -1,0 +1,18 @@
+=========================
+Intro to component design
+=========================
+
+This section will focus on taking everything
+we've learned so far about props, events, state 
+and combine them all to build a more real-world 
+esque react structure
+
+Goals for the section: 
+
+- Understand strategies for 'component decomposition'
+
+- Practice designing the structure of a React app
+  the way it's done in a real job or project
+
+- Learn how to pass functions between components 
+
