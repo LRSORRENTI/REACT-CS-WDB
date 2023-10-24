@@ -1,12 +1,12 @@
 import Die from '../Die/Die';
 import './Dice.css'
 
-export default function Dice( {dice} ) {
+export default function Dice( {dice, color} ) {
     return (
         <section className="Dice"> 
-            {Dice.map((v, i) => {
-                <Die key={i} val={v} />
-            })}
+            {dice.map((v, i) => (
+                <Die key={i} val={v} color={color}/>
+            ))}
         </section>
     );
 };

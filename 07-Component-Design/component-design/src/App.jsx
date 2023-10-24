@@ -1,12 +1,14 @@
 import './App.css'
-import Die from '../components/Die/Die'
+import Dice from '../components/Dice/Dice'
 
 function App() {
 
   return (
     <>
     <h1>Component Design</h1>
-    <Die val={7}/>
+    <Dice dice={[3, 6 ,1]} color="rgb(134, 216, 175)"/>
+    <Dice dice={[3, 6 ,1]} color="lightcoral"/>
+    <Dice dice={[3, 6 ,1]} />
     </>
   )
 }
