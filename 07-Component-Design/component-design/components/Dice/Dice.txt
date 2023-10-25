@@ -31,6 +31,3 @@ prop, then will render a set of die components where
 the values are passed in for each, and he array index 
 is the key{i}, which in the real world isn't good, but 
 for learning purposes we'll structure it that way
-
-And now back in App.jsx, instead of importing a die 
-component, we'll import the Dice component

@@ -5,7 +5,7 @@ LuckyN Game
 This LuckyN component will be where we 
 have our state tracked to determine a winner, 
 notice so far we've added zero state to Die or 
-Die components
+Dice components
 
 That's because state cannot travel upwards, 
 now that we're constructing our parent component
@@ -34,3 +34,8 @@ So we'll need to add:
 - State:  dice: [n, ...]
 
 - Events: roll()
+
+And in App.jsx, we only render this LuckyN 
+component, nothing else, since we have components 
+rendering components, we useState and manage state 
+in this parent level component
