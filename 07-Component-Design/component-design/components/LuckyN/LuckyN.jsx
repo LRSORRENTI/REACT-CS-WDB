@@ -5,6 +5,7 @@
 import { useState } from "react";
 import { getRolls} from "../../utilities/utils";
 import Dice from '../Dice/Dice'
+import Button from "../Button/Button";
 
 export default function LuckyN({ title="Dice Game", numDice = 2, winCheck}) {
     // as a quick note, we could implement an intializer 
@@ -25,6 +26,7 @@ export default function LuckyN({ title="Dice Game", numDice = 2, winCheck}) {
             </h1>
             <Dice dice={dice}/> 
             <button onClick={roll}>Roll Dice</button>
+            <Button label={'Click me'} clickFunc={roll}/>
         </main>
     )
 };
