@@ -1,0 +1,40 @@
+==========================
+Passing functions as props
+========================== 
+
+A note on something we've already been trying to 
+do, minimize the amount of logic inside 
+the components
+
+When possible, write utility functions that are 
+re-usable across components, this not only 
+cleans up component files, as well as adds 
+re-usability across the app 
+
+But when do we actually want to pass in a function 
+as a prop? 
+
+We can implement a different win condition for 
+the LuckyN game, right now it's a sum based game, 
+roll until you get to 7 or 11 or whichever, 
+what if we wanted the game to be more flexible?
+
+Adding a win condition based on rolling under a 
+number n, like roll until you get below 3, rolling 
+snake eyes will be the win condition, or anything 
+really, just adding more flexibility to be able 
+to create any kind of win condition
+
+As an example: 
+
+// Win condition is that the dice must sum less than 4
+
+function lessThanFour(dice) {
+    return sum(dice) < 4; 
+}
+
+<LuckyN numDice={3} winCheck={lessThanFour} /> 
+
+Above we now pass in a win condition as a prop to 
+LuckyN, so if we have many different win conditions 
+the game gains more flexibility
