@@ -1,5 +1,5 @@
 // import { lessThanFour } from '../utilities/utils'
-
+import Box from  '../components/Box/Box'
 import LuckyN from '../components/LuckyN/LuckyN'
 import { sum } from '../utilities/utils'
 
@@ -19,9 +19,12 @@ function App() {
   return (
     <>
     <h1>Component Design</h1>
-    <LuckyN title='Roll < 4' winCheck={lessThanFour}/>
-    <LuckyN title='Match Dice' winCheck={allSameValue}/>
+    {/* <LuckyN title='Roll < 4' winCheck={lessThanFour}/>
+    <LuckyN title='Match Dice' winCheck={allSameValue}/> */}
     {/* <LuckyN numDice={3} goal={11}/> */}
+    <Box/>
+    <Box/>
+    <Box/>
     </>
   )
 }
