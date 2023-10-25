@@ -1,0 +1,41 @@
+===========
+LuckyN Game
+===========
+
+This LuckyN component will be where we 
+have our state tracked to determine a winner, 
+notice so far we've added zero state to Die or 
+Dice components
+
+That's because state cannot travel upwards, 
+now that we're constructing our parent component
+we can start to strategize how we'll implement 
+state 
+
+As an example, if maybe we were tracking multiple 
+LuckyN games at the same time for whatever reason, we 
+wouldn't include state inside here at all, but 
+since we're only going to implement a single game 
+this is where we have our state, parent level state 
+management
+
+This component will have a prop called numDice,
+and we'll have a prop called goal 
+
+But we also need to implement state now, if we have 
+a game, we need to keep track of what values the 
+dice add up to, if 7 is the goal or whatever the goal 
+is we need to have a check
+
+So we'll need to add: 
+
+- Props:  numDice and goal
+
+- State:  dice: [n, ...]
+
+- Events: roll()
+
+And in App.jsx, we only render this LuckyN 
+component, nothing else, since we have components 
+rendering components, we useState and manage state 
+in this parent level component

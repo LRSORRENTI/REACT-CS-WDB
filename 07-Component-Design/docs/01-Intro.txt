@@ -1,0 +1,50 @@
+=========================
+Intro to component design
+=========================
+
+This section will focus on taking everything
+we've learned so far about props, events, state 
+and combine them all to build a more real-world 
+esque react structure
+
+Goals for the section: 
+
+- Understand strategies for 'component decomposition'
+
+- Practice designing the structure of a React app
+  the way it's done in a real job or project
+
+- Learn how to pass functions between components 
+
+We'll practice these concepts by building a game, 
+a game where we'll have two dice, if after the 
+dice roll each add up to sevem, we roll a five 
+and a two, we win, or three and four..
+
+But we'll also struture the app so that we can 
+play lucky (n), lucky 10, lucky 20 where we have more than 
+two dice, we'll structure this app so that it can be 
+easily extended and customizable
+
+Requirements: 
+
+- Play a dice game with numDice or number of dice 
+  and a selection for the add up to goal, 7, 10, 20...
+
+- Display a winning banner if the user wins the game 
+
+- Implement a roll again button that re-rolls all the 
+  dice
+
+
+  When we first start building, some things to 
+  think about are: 
+
+  - What props will the project ultimately need? 
+
+  - What state will be needed? And where? 
+
+  - How do we effectively make components as 
+    de-coupled and re-usable as possible? 
+
+

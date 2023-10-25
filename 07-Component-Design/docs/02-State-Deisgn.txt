@@ -1,0 +1,42 @@
+============
+State design
+============
+
+Another important thing to understand is State cannot 
+be passed upwards, let's say we have a dice component 
+and two child die components, if we place the state 
+low down in the child die components, those pieces of 
+state can't go up to the parent dice component, so we 
+need to keep track of state further up the chain
+
+This is the state design principle, we lift the state 
+as high as necessary, but be aware not to raise it 
+too high 
+
+So for our app, where do we keep track of the 
+dice-roll state? 
+
+Not in the main app.js, the app.js usually won't have 
+state, it's there to render components
+
+But inside the main game component itself, 
+Luckyn is the parent component of the Dice 
+component, and Dice is the parent of the two 
+Die components
+
+State can flow downwards, but not up
+
+===================================
+De-coupling logic from presentation
+===================================
+
+Generally aim for components to be one of 
+two configurations: 
+
+1. Presentational - This type doesn't manage 
+   state, it's there to populate the UI and 
+   the appearance
+
+2. Logical - This type of component will manage
+   state, or has state related logic, it's 
+   not concerned with UI 
