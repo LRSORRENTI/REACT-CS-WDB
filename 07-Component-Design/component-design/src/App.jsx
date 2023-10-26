@@ -1,5 +1,6 @@
 // import { lessThanFour } from '../utilities/utils'
 import Box from  '../components/Box/Box'
+import BoxGrid from '../components/BoxGrid/BoxGrid';
 import LuckyN from '../components/LuckyN/LuckyN'
 import { sum } from '../utilities/utils'
 
@@ -22,9 +23,7 @@ function App() {
     {/* <LuckyN title='Roll < 4' winCheck={lessThanFour}/>
     <LuckyN title='Match Dice' winCheck={allSameValue}/> */}
     {/* <LuckyN numDice={3} goal={11}/> */}
-    <Box/>
-    <Box/>
-    <Box/>
+    <BoxGrid />
     </>
   )
 }
