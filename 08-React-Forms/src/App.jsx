@@ -1,13 +1,15 @@
+import UsernameForm from '../components/UsernameForm'
 import './App.css'
 
 
-function App() {
+export default function App() {
 
   return (
     <>
     <h1>React Forms</h1>
+    <UsernameForm/>
     </>
   )
 }
 
-export default App
+
