@@ -17,7 +17,9 @@ const updateUserName = (event) => {
 }
     return (
         <div>
+            <label htmlFor="username">Enter a username</label>
             <input 
+            id="username"
             type="text"
             placeholder="username" 
             value={userName}
