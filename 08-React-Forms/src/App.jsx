@@ -1,7 +1,7 @@
 import ABetterSignupForm from '../components/ABetterSignupForm'
+import ShoppingList from '../components/ShoppingList/ShoppingList'
 import ShoppingListForm from '../components/ShoppingList/ShoppingListForm/ShoppingListForm'
-import SignupForm from '../components/SignupForm'
-import UsernameForm from '../components/UsernameForm'
+
 import './App.css'
 
 
@@ -11,7 +11,7 @@ export default function App() {
     <>
     <h1>React Forms</h1>
     <ABetterSignupForm/>
-    <ShoppingListForm />
+    <ShoppingList/>
     </>
   )
 }

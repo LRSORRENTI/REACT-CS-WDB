@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './ShoppingListForm.css'
 
-export default function ShoppingListForm() {
+export default function ShoppingListForm({addItem}) {
 
 const [formData, setFormData]  = useState({
     // We'll use an object as state for the initial 
@@ -21,9 +21,14 @@ const [formData, setFormData]  = useState({
             }
         })
     }
+
+    function handleSubmit(evt) {
+        evt.preventDefault();
+        addItem(formData)
+    }
     return (
         <div>
-            <form>
+            <form className='formList' onSubmit={handleSubmit}>
             <h2>Product is: {formData.product}</h2>
             <label htmlFor="product">Product Name</label>
             <input type="text"
@@ -41,7 +46,7 @@ const [formData, setFormData]  = useState({
                   id='quantity'
                   onChange={handleChange}
                   value={formData.quantity}/>
-
+            <button>Add Item</button>
             </form>
         </div>
     )
