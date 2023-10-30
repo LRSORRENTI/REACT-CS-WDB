@@ -1,0 +1,24 @@
+.formGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+}
+
+/* .formGroup input {
+    margin-top: 10px;
+} */
+
+.formGroup label {
+    margin-top: 5px;
+}
+
+.formBtn {
+    margin-top: 20px;
+}
+
+.formBtn:hover {
+    background-color: white;
+    color: black;
+}

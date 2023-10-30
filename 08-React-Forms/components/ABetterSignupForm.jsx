@@ -6,6 +6,7 @@
 // making unique state for all 10 is clunky
 
 import { useState } from "react";
+import './SignupForm.css'
 
 // A better approach is to use an object
 
@@ -29,6 +30,19 @@ export default function ABetterSignupForm () {
         setFormData((currData) => {
             currData[changedField] = newValue;
             return {...currData};
+            // The above can take advantage of computed 
+            // property names: 
+
+            // setFormData((currData) => {
+            // return {
+            //          ...currData,
+            //          [changedField]: newValue
+            //     }
+            //  })
+        
+            // The above does exactly the same as 
+            // before but in a cleaner way
+            
         });
     };
     
@@ -37,7 +51,7 @@ export default function ABetterSignupForm () {
     }
 
     return (
-        <div>
+        <div className="formGroup">
             <label htmlFor="firstname">First Name</label>
             <input 
                 id="firstname"
@@ -62,7 +76,7 @@ export default function ABetterSignupForm () {
                     value={formData.password}
                     name="password"
                     onChange={handleChange}/>
-            <button onClick={handleSubmit}>Submit</button>
+            <button className="formBtn" onClick={handleSubmit}>Submit</button>
         </div>
     )
 }
