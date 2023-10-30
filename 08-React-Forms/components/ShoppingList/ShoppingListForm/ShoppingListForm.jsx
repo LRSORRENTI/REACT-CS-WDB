@@ -25,6 +25,9 @@ const [formData, setFormData]  = useState({
     function handleSubmit(evt) {
         evt.preventDefault();
         addItem(formData)
+        // Now once the data has been submitted we 
+        // can empty it: 
+        setFormData({product: "", quantity: 0})
     }
     return (
         <div>

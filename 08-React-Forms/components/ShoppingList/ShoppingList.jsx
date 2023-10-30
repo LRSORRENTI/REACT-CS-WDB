@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ShoppingListForm from "./ShoppingListForm/ShoppingListForm";
-
+import './ShoppingList.css'
 export default function ShoppingList() {
     const [items, setItems] = useState([
     {
@@ -34,7 +34,7 @@ export default function ShoppingList() {
     return (
         <div>
             <h3>Shopping List:</h3>
-            <ul>
+            <ul className="list">
                 {items.map((i) => (
                  <li key={i.id}>
                 {i.product} - {i.quantity}
