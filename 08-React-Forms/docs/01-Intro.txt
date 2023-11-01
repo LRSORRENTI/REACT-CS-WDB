@@ -1,0 +1,27 @@
+====================
+Intro to React Forms
+====================
+
+The reason React forms is taught later on is 
+because understanding state is required before 
+implementing forms in React 
+
+HTML form elements work differently in React since 
+they naturally keep some internal state, not React 
+state but it maintains a bit of data on it's own
+
+In React, we'll usually have a specific JS function 
+that handles form submission, as well as has access 
+to the data the user enters 
+
+This technique is Controlled Components 
+
+We'll create a React bit of State, then make that 
+the source of truth, where React controls what's 
+shown, and what happens as the user types 
+
+The technique involves tracking every key input 
+as the user types, instead of waiting until the end 
+and grabbing all the data, we grab each character as 
+the user is typing, then the React state we have will 
+bind to that user input

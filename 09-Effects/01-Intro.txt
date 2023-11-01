@@ -1,0 +1,29 @@
+================================
+Introducing React useEffect Hook
+================================
+
+Another one of the most used hooks in React 
+is useEffect 
+
+But first a recap of rendering and state: 
+
+- When we call a state setter function [myState, changeState] 
+  when changeState is called inside of a component,
+  the component re-renders and we get the new state 
+  value for myState 
+
+But if we want to add some functionality immediately 
+after a first render or re-render we can !
+
+In react these functionality changes immediately after 
+the first render or re-render are called effects, or 
+side effects
+
+We can use this useEffect hook to change parts of the 
+DOM that aren't covered by React
+
+We can use it for ASYNC operations like fetching 
+data from an api when the component is mounted 
+
+Change things right before a component un-mounts 
+

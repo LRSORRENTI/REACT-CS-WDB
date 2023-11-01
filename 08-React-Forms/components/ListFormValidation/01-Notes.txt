@@ -1,0 +1,22 @@
+===============
+Form Validation
+===============
+
+Right now we can add items while only 
+imputting quantity field, there are libraries 
+that can help with form validation but we'll 
+implement it from scratch here 
+
+One approach would be to add state for every 
+input field we have, where we set useState to 
+false initially then validate: 
+
+const [productIsValid, setProductIsValid] = useState(false);
+
+const [quantityIsValid, setQuantityIsValid] = useState(false);
+
+This approach is fine if we only have two fields 
+but if our form has 10 or more field inputs it can 
+be much better to store those state variables 
+in an object 
+
