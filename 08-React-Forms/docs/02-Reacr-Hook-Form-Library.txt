@@ -20,13 +20,7 @@ the box, here's an example of the basic usage:
 
 `````````````````````````````````````````````````````````````````````````````````````````
 
-import { useForm, SubmitHandler } from "react-hook-form"
-
-
-type Inputs = {
-  example: string
-  exampleRequired: string
-}
+import { useForm } from "react-hook-form"
 
 
 export default function App() {
@@ -35,8 +29,10 @@ export default function App() {
     handleSubmit,
     watch,
     formState: { errors },
-  } = useForm<Inputs>()
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
+  } = useForm()
+
+
+  const onSubmit = (data) => console.log(data)
 
 
   console.log(watch("example")) // watch input value by passing the name of it
@@ -61,3 +57,6 @@ export default function App() {
 }
 
 `````````````````````````````````````````````````````````````````````````````````````````
+
+The first thing to note is instead of importing useState 
+we use the libraries useForm hook
