@@ -1,0 +1,28 @@
+======================
+useEffect Dependencies
+======================
+
+The next part of useEffect that's crucial to cover is 
+that we can pass a second argument, we saw in the first 
+lecture:
+
+useEffect(myCallbackFn);
+
+Where myCallbackFn runs after every render and 
+re-render 
+
+But we can also provide a second argument: 
+
+useEffect(myCallbackFn, [productId, userId]);
+
+The above runs myCallbackFn effect only when 
+productId or userId changes 
+
+productId and userId are known as Dependencies in 
+this context, basically just two pieces of state 
+that are watched for changes 
+
+This also means myCallbackFn will only be called 
+when either of those two pieces of state change, 
+if something else were to change myCallbackFn sits 
+idle 
