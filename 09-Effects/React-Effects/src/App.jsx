@@ -5,6 +5,7 @@ import './App.css'
 import Counter from './components/Counter'
 import QuoteFetcher from './components/QuoteFetcher'
 import QuoteFetchLoadingIndicator from './components/QuoteFetchLoadingIndicator'
+import ProfileViewerWithSearch from './components/ProfileViewerWithSearch'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
       <Counter/>
       <QuoteFetcher/>
       <QuoteFetchLoadingIndicator/>
+      <ProfileViewerWithSearch/>
   
     </>
   )
