@@ -25,5 +25,27 @@ DOM that aren't covered by React
 We can use it for ASYNC operations like fetching 
 data from an api when the component is mounted 
 
-Change things right before a component un-mounts 
+Change things right before a component un-mounts \
 
+useEffect is great for any kind of side effect you'd 
+like to run
+
+To use an effect register it with useEffect(fn)
+
+import React, { useEffect } from 'react';
+
+function myComponent() {
+  function myEffect () {
+    // ... does something
+  }
+  useEffect(myEffect)
+  // rest of component
+}
+
+Also very common to see useEffect inline: 
+
+function myComponent(){
+  useEffect(function myEffect() {
+    // does something
+  })
+}
