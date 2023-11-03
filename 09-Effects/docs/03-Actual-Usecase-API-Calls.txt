@@ -1,0 +1,24 @@
+=====================================================
+Real world use case of useEffect - Fetching Data from 
+an API
+=====================================================
+
+A real world use case that you'll useEffect used a lot 
+with is fetching data, but we only want to do this once
+not on every single render, as fetching data from an 
+api can take time, and if we make those api calls 
+every time state changes or the component re-renders 
+that's going to take a lot of time 
+
+When a component renders, fetch data from an api
+
+- Data fetching is asynchronous, takes time to 
+  complete 
+- Show loading message to user while fetching 
+
+To fetch correctly: 
+
+- Have a useEffect that only runs once
+
+- Inside that effect, when api call is done, 
+  set state and re-render
