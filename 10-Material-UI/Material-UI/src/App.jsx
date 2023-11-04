@@ -5,7 +5,8 @@ import SendIcon from '@mui/icons-material/Send';
 import Stack from '@mui/material/Stack';
 import AlarmIcon from '@mui/icons-material/Alarm';
 import IconButton from '@mui/material/IconButton';
-
+import BasicAccordion from '../components/Accordion';
+import RatingDemo from '../components/rating/RatingDemo';
 import './App.css'
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
   return (
     
     <>
+    <RatingDemo/>
+    <BasicAccordion/>
    <Button size="large" onClick={() => alert("hi")} variant="contained">Contained</Button>
    <Button size="medium" color="error" onClick={() => alert("hi")} variant="contained">Contained</Button>
    <Button size="small" color="success" onClick={() => alert("hi")} variant="contained">Contained</Button>
