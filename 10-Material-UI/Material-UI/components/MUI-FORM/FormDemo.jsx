@@ -1,4 +1,4 @@
-import { Slider, TextField } from "@mui/material"
+import { Slider, TextField, Box, AppBar } from "@mui/material"
 import './Form-Demo.css'
 import { useState } from "react"
 
@@ -15,7 +15,14 @@ export default function FormDemo() {
     }
 
     return (
-        <div>
+
+        <Box sx={{
+            border: "1px solid navy",
+            p: 4,
+            backgroundColor: "peachpuff",
+            borderRadius: "5%",
+            flexGrow: 1        }}>
+            <AppBar/>
             <h3>Volume is: {volume}</h3>
             <Slider value={volume} 
                     onChange={adjustSlider}
@@ -27,6 +34,6 @@ export default function FormDemo() {
                        variant="outlined"
                        value={value}
                        onChange={updateValue}/>
-        </div>
+        </Box>
     )
 }

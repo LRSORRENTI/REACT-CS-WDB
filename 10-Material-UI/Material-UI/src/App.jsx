@@ -9,6 +9,7 @@ import BasicAccordion from '../components/Accordion';
 import RatingDemo from '../components/rating/RatingDemo';
 import FormDemo from '../components/MUI-FORM/FormDemo';
 import './App.css'
+import { AppBar } from '@mui/material';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
   return (
     
     <>
+    <AppBar/>
     <FormDemo/>
     <RatingDemo/>
     <BasicAccordion/>
