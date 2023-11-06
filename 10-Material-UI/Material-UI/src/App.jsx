@@ -7,6 +7,7 @@ import AlarmIcon from '@mui/icons-material/Alarm';
 import IconButton from '@mui/material/IconButton';
 import BasicAccordion from '../components/Accordion';
 import RatingDemo from '../components/rating/RatingDemo';
+import FormDemo from '../components/MUI-FORM/FormDemo';
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   return (
     
     <>
+    <FormDemo/>
     <RatingDemo/>
     <BasicAccordion/>
    <Button size="large" onClick={() => alert("hi")} variant="contained">Contained</Button>
