@@ -50,7 +50,7 @@ export default function ToDoList(){
         setTodos(prevTodos => {
           return [...prevTodos,
                    {text: text, 
-                    id: 8, 
+                    id: crypto.randomUUID(), 
                     completed: false}]
         })
     }
