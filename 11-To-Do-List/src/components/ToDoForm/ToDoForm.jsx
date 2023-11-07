@@ -4,7 +4,7 @@ import './ToDoForm.css';
 import { useState } from 'react';
 
 
-export default function ToDoForm(){
+export default function ToDoForm({addTodo}){
 
     const [text, setText] = useState("");
 
@@ -12,9 +12,15 @@ export default function ToDoForm(){
         setText(evt.target.value);
     };
 
+    const handleSubmit = (evt) => {
+        evt.preventDefault();
+        addTodo(text);
+        setText("");
+    }
+
     return (
         <ListItem>
-            <form action="">
+            <form action="submit" onSubmit={handleSubmit}>
             <TextField id='outlined-basic'
                        label="Add To Do"
                        variant='outlined'
@@ -25,7 +31,8 @@ export default function ToDoForm(){
                          <InputAdornment position="end">
                           <IconButton
                             aria-label="create To Do"
-                            edge="end">
+                            edge="end"
+                            onClick={handleSubmit}>
                            <Create/>
                           </IconButton>
                         </InputAdornment>
