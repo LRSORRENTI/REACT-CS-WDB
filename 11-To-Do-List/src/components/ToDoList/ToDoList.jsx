@@ -1,18 +1,27 @@
-import { useState } from 'react'
+import { useState, useEffect} from 'react'
 import './ToDoList.css'
 import List from '@mui/material/List';
 import ToDoItem from '../ToDo/ToDoItem';
 import ToDoForm from '../ToDoForm/ToDoForm';
 
-const initialToDos = [
-{id: 1, text: "Walk Dog", completed: false},
-{id: 2, text: "Empty Trash", completed: false},
-{id: 3, text: "Wash Dishes", completed: true},
-{id: 4, text: "Clean Bathroom", completed: false}
-];
+const getInitialData = () => {
+    const data = JSON.parse(localStorage.getItem("todos"));
+    if(!data) {
+       // If there are no todos return an empty array
+        return [];
+    } else {
+       // else if there is data in localStorage return 
+       // that array of data
+        return data;
+    }
+}
 
 export default function ToDoList(){
-    const [todos, setTodos] = useState(initialToDos);
+    const [todos, setTodos] = useState(getInitialData);
+
+    useEffect(() => {
+        localStorage.setItem('todos', JSON.stringify(todos));
+    }, [todos])
 
     const removeTodo = (id) => {
         setTodos(prevTodos => {
