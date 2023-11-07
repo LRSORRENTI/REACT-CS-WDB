@@ -11,14 +11,22 @@ const initialToDos = [
 ];
 
 export default function ToDoList(){
-    // [todo, AddToDo] = useState({id: 1, 
-    //                             text: "Walk Dog", 
-    //                             completed: false})
     const [todos, setTodos] = useState(initialToDos);
+
+    const removeTodo = (id) => {
+        setTodos(prevTodos => {
+            return prevTodos.filter(t => t.id !== id);
+        });
+    };
+
     return (
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
             {todos.map(todo => {
-                return <ToDoItem todo={todo} key={todo.id}/>
+                return <ToDoItem 
+                        todo={todo} 
+                        key={todo.id}
+                        remove={removeTodo}
+                        />
                  
             })}
         </List>
