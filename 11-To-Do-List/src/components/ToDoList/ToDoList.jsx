@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './ToDoList.css'
 import List from '@mui/material/List';
 import ToDoItem from '../ToDo/ToDoItem';
+import ToDoForm from '../ToDoForm/ToDoForm';
 
 const initialToDos = [
 {id: 1, text: "Walk Dog", completed: false},
@@ -19,6 +20,23 @@ export default function ToDoList(){
         });
     };
 
+    const toggleTodo = (id) => {
+        setTodos(prevTodos => {
+            return prevTodos.map(todo => {
+                if(todo.id === id){
+                    // So if the todo id matches the id passd in 
+                    // we return a copy using spread, and also 
+                    // change the completed value to be the opposite 
+                    // using bang operator, so when you press it will 
+                    // toggle back and forth
+                    return {...todo, completed: !todo.completed }
+                } else {
+                    return todo;
+                }
+            })
+        })
+    }
+
     return (
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
             {todos.map(todo => {
@@ -26,9 +44,11 @@ export default function ToDoList(){
                         todo={todo} 
                         key={todo.id}
                         remove={removeTodo}
+                        toggle={() => toggleTodo(todo.id)}
                         />
                  
             })}
+            <ToDoForm/>
         </List>
     )
 }
