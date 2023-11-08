@@ -22,6 +22,7 @@ export default function ToDoForm({addTodo}){
         <ListItem>
             <form action="submit" onSubmit={handleSubmit}>
             <TextField id='outlined-basic'
+                        sx={{width: "330px"}}
                        label="Add To Do"
                        variant='outlined'
                        onChange={handleChange}
