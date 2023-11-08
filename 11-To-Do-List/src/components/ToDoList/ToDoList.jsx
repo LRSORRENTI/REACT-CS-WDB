@@ -3,6 +3,7 @@ import './ToDoList.css'
 import List from '@mui/material/List';
 import ToDoItem from '../ToDo/ToDoItem';
 import ToDoForm from '../ToDoForm/ToDoForm';
+import { Box } from '@mui/material';
 
 const getInitialData = () => {
     const data = JSON.parse(localStorage.getItem("todos"));
@@ -56,6 +57,11 @@ export default function ToDoList(){
     }
 
     return (
+        <Box sx={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "40px"
+        }}>
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
             {todos.map(todo => {
                 return <ToDoItem 
@@ -68,6 +74,7 @@ export default function ToDoList(){
             })}
             <ToDoForm addTodo={addTodo}/>
         </List>
+        </Box>
     )
 }
 
